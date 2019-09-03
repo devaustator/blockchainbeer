@@ -1,0 +1,135 @@
+body {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 200;
+  background: #1d2328;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(images/hero-temp.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a, a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.content {
+  width: 90%;
+  max-width: 1200px;
+  min-width: 300px;
+  margin: 20px 30px 100px 30px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+.title img {
+  max-height: 350px;
+}
+h1, h2 {
+  font-size: 34px;
+  letter-spacing: -.05em;
+  line-height: 40px;
+}
+
+.beer-list{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.beer {
+  /*display: flex;*/
+  flex-direction: row;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #07c6e5;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.back {
+  flex-direction: row;
+  width: 100%;
+  max-width: 220px;
+  border: 1px solid #07c6e5;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.arrow {
+  flex: 1 1 auto;
+  text-align: right;
+  transform: translateY(-2px);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
+}
+.breadcrumb li {
+  margin-right: 10px;
+}
+
+
+/* Timeline */
+
+
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  border-left: 2px solid #07c6e5;
+  text-align: left;
+}
+.timeline-item h1 {
+  line-height: 1.1em;
+}
+.timeline-item p {
+  font-size: 1rem;
+}
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-weight: 700;
+  font-size: .785rem;
+  color: #07c6e5;
+}
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid #07c6e5;
+  background: #1d2328;
+}
+.timeline-item:last-child {
+  -o-border-image: linear-gradient(to bottom, #07c6e5 60%, rgba(0, 0, 0, 0)) 1 100%;
+     border-image: linear-gradient(to bottom, #07c6e5 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
